@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dharitri Banik | Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button class="toggle-btn" id="modeToggle">🌙</button>
+
+  <div class="card">
+    <div class="profile">
+      <img src="me.jpg" class="dp" />
+      <h1>Dharitri Banik</h1>
+      <p class="bio">Student.Maniac.Disguise.Sagittarius.Earth.Maestro</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/observed.fatigue/" target="_blank" title="Instagram">📸</a>
+        <a href="https://www.facebook.com/observed.fatigue/" target="_blank" title="Facebook">📘</a>
+        <a href="https://x.com/Ng6558" target="_blank" title="X">🐦</a>
+        <a href="https://in.pinterest.com/ItzEclipseNova1234/_profile/" target="_blank" title="Pinterest">📌</a>
+        <a href="https://github.com/EclipseNova1234" target="_blank" title="GitHub">💻</a>
+        <div class="email-wrapper">
+          📬
+          <span class="email-tooltip">dharitribanik.cob@gmail.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  const toggleBtn = document.getElementById('modeToggle');
+  const body = document.body;
+
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    
+    if (body.classList.contains('light-mode')) {
+      toggleBtn.textContent = '🌙'; // Show moon to switch to dark
+    } else {
+      toggleBtn.textContent = '🌞'; // Show sun to switch to light
+    }
+  });
+</script>
+</body>
+</html>
